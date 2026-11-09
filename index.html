@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>致父亲</title>
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:"Noto Serif SC",serif,system-ui;background:#f8f5f0;color:#3a3a3a;line-height:2.1;padding:40px 20px;opacity:0;animation:pageFadeIn 1.2s ease forwards}
+@keyframes pageFadeIn{to{opacity:1}}
+.container{max-width:680px;margin:0 auto;background:#fff;padding:50px 45px;border-radius:16px;box-shadow:0 8px 30px rgba(0,0,0,.07)}
+.title{text-align:center;font-size:24px;color:#594b3f;margin-bottom:32px;letter-spacing:3px;opacity:0;animation:textShow 1s ease .4s forwards}
+.content p{font-size:17px;text-align:justify;margin-bottom:20px;opacity:0;transform:translateY(12px);animation:textShow .8s ease forwards}
+@keyframes textShow{to{opacity:1;transform:translateY(0)}}
+.content p:hover{text-shadow:0 0 6px rgba(165,138,115,.18);transition:all .3s}
+.signature{margin-top:45px;text-align:right;font-size:16px;color:#6b5d50;opacity:0;animation:textShow 1s ease 1.8s forwards}
+.heart-box{text-align:center;margin-top:30px}
+#heart{font-size:28px;color:#b88b7b;cursor:pointer;display:inline-block;user-select:none}
+@keyframes beat{0%,100%{transform:scale(1)}50%{transform:scale(1.2)}}
+.beat{animation:beat .4s ease}
+@media(max-width:520px){.container{padding:30px 24px}.title{font-size:20px}.content{font-size:16px}}
+</style>
+</head>
+<body>
+<div class="container">
+<div class="title">致父亲</div>
+<div class="content">
+<p style="animation-delay:.6s">爸爸：</p>
+<p style="animation-delay:.7s">见字如晤.</p>
+<p style="animation-delay:.8s">初寒骤临，高调地踩进了视野中，顺着不容置喙的冷看去，更多的是平息躁郁的宁。念父出生时，必是被赋予了这奇迹般的底色。</p>
+<p style="animation-delay:.9s">您有一宁化纷嚣，不惊不燥无厉色，喜恶皆淡无所嗔。追昔，父亲留下的印象一直以来是平和与安宁，您挡在我面前，我便也如此辨认整个人间。于是我在第一次触踏外界时，竟扎进失重感里，有如从巍峨的峰峦上跌落，眼前的漫美云霄也化作乌有，几分无奈。说来，父虽宁，却不是非常苦闷寂讷的沉宁，也不是稳操胜券的镇宁，而是一种带着孩子气的稚宁。父亲的宁，和初冬那份心思难测的纵然有异曲同工之处，虽是意料之内的宁，却有时拨云见日，又故意席来入骨厉寒，生来携捎了俏皮之趣，让女子想起孩童来，不正经，故也不显老成。</p>
+<p style="animation-delay:1s">万汇揫敛，时惟冬序。吾父生辰在此，如冬之清寂，自有安宁。想冬敛四季，也想吾父包纳之海涵。常缠父诉说儿时点滴，父谈及幼时总是勤干的。我想长子使命裹挟，总是要有稳与怀，不知有几分为了喜爱，又有几分榜样使然，您便是生来便用全部去包纳了这些，这些责任，还有等等难以言明的人情所系。于是再瞭望之后的人生，再难无顾其它，随心所欲。女子妄言知其然，知其所以然，故每每见父有所爱好时心底所剩唯有支持。</p>
+<p style="animation-delay:1.1s">心中还有词句万段，惜措辞不能，唯恐表达表述有所差异，便及时收束于此。以上所写皆为女子区区一隅的拙见，于父，构不成万分之一的本色。只愿父可一安宁，便从一而终，永生安宁，这也是女子必生所求，定会向父追随。</p>
+<p style="animation-delay:1.2s">终是要说最重要的，今日予父的祝愿。</p>
+<p style="animation-delay:1.3s">生日快乐，永远快乐！</p>
+</div>
+<div class="signature">——颖颖</div>
+<div class="heart-box"><span id="heart">♡</span></div>
+</div>
+<script>
+const heart=document.getElementById('heart');
+heart.onclick=function(){this.classList.add('beat');setTimeout(()=>{this.classList.remove('beat')},400)}
+</script>
+</body>
+</html>
